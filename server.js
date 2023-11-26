@@ -1,6 +1,4 @@
-if (process.env.NODE_ENV !== 'production')  {
-    require('dotenv').config();
-}
+require('dotenv').config();
 
 const express = require('express');
 const app = express();
@@ -14,18 +12,19 @@ app.set('layout', 'layouts/layout');
 app.use(expressLayout);
 app.use(express.static('public'));
 
-const mongoose = require('mongoose', );
-mongoose.connect(process.env.DB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => {
-    console.log('Connected To MongoDB');
-}).catch(err => {
-    console.error('Error connecting to MongoDB:', err);
-})
+app.use('/', require('./routes/index.js'))
 
-const db = mongoose.connection
+app.use((err, req, res, next) => {
+    console.log(err.stack);
+    console.log(err.name);
+    console.log(err.code);
 
-app.listen(process.env.PORT || 3000)
+    res.status(500).json({
+        message: "Something Went Wrong"
+    });
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server Running At ${PORT}`));
 
 app.use('/', indexRouter)
