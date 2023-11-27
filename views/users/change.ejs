@@ -1,0 +1,50 @@
+<div class="forgot-wrapper">
+    <div class="auth-container">
+
+        <div class="auth-header">
+
+            <h1 style="margin: 0;">Change</h1>
+            <p style="margin: -10px; color: #ffffff; text-align: center;">Password</p>
+            <span class="close-button" id="closeButton" onclick="goingToHomepage()">&times;</span>
+        </div>
+
+        <div class="auth-form">
+
+            <form action="/auth/changePassword" method="post">
+
+                <% if (messages.error) { %>
+
+                    <div class="error-message">
+                        <i class='bx bxs-error'></i>
+                        <%= messages.error %>
+                    </div>
+
+                    <% } %>
+
+                        <div class="input-container" style="height: 40px;">
+
+                            <input type="email" required name="email" placeholder="example@example" autofocus
+                                autocomplete="off">
+                            <i class='bx bxl-gmail'></i>
+
+                        </div>
+
+                        <div class="input-container" style="height: 40px;">
+
+                            <input type="password" required name="password" id="password" placeholder="Password"
+                                autofocus autocomplete="off">
+                            <i class='bx bx-lock-alt'></i>
+                        </div>
+
+                        <div class="input-container" style="height: 40px;">
+
+                            <input type="password" required name="newPassword" id="newPassword"
+                                placeholder="New Password" autofocus autocomplete="off">
+                            <i class='bx bxs-lock-alt'></i>
+                        </div>
+
+                        <button type="submit">Commit</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #8e44ad #3A005E; /* Match these colors with your body background */
+}
+  
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #3A005E; /* Match this color with your body background */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #8e44ad; /* Match this color with your body background */
+    border-radius: 20px;
+    border: 3px solid #3A005E; /* Match this color with your body background */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(-135deg, #1A1A1A, #3A005E);
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    user-select: none;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background-color: #8e44ad;
+    width: 300px;
+    height: 300px;
+    top: 12%;
+    filter: blur(90px) brightness(0.5);
+}
+
+@media (max-width: 550px) {
+    body::before {
+        width: 200px;
+        height: 200px;
+    }
+
+    body::after {
+        width: 150px;
+        height: 150px;
+        bottom: -7%;
+        right: 11%;
+    }
+}

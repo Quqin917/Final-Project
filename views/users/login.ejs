@@ -1,0 +1,54 @@
+<div class="login-container">
+    <div class="auth-container">
+        <div class="auth-header">
+            <h1>Login</h1>
+            <span class="close-button" id="closeButton">&times;</span>
+        </div>
+
+        <div class="auth-form">
+            <form action="/auth/login" method="post">
+                <% if (messages.error) { %>
+                    <div class="error-message">
+                        <i class='bx bxs-error'></i>
+                        <%= messages.error %>
+                    </div>
+                    <% } %>
+
+                        <div class="input-container">
+                            <input type="email" required name="email" placeholder="example@example" autofocus
+                                autocomplete="off">
+                            <i class='bx bxl-gmail'></i>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="password" required name="password" placeholder="Password" autofocus
+                                autocomplete="off">
+                            <i class='bx bxs-lock-alt'></i>
+                        </div>
+
+                        <div class="forgot-container">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="/auth/changePassword">Forgot password</a>
+                        </div>
+
+                        <button type="submit">Log in</button>
+
+                        <div class="register-container">
+                            <p>Don't have an account? <a href="/auth/register">Register</a></p>
+                        </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    const ButtonClose = document.getElementById('closeButton');
+
+    ButtonClose.addEventListener('click', function () {
+        if (ButtonClose && window.location.pathname === '/') {
+            closeLoginForm('.login-show.popup');
+        } else {
+            goingToHomepage();
+        }
+    });
+</script>

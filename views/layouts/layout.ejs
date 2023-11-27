@@ -4,11 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiveCrypto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/public/style/cryptoMain.css">
+    <link rel="stylesheet" href="/public/style/cryptoInput.css">
+    <link rel="stylesheet" href="/public/style/cryptoBalls.css">
+    <link rel="stylesheet" href="/public/style/authonticated.css">
+    <link rel="stylesheet" href="/public/style/homeStyle.css">
+    <link rel="stylesheet" href="/public/style/header.css">
+    <script src="/public/javascript/navigation.js"></script>
+    <script src="/public/javascript/login.js"></script>
+    <script src="/public/javascript/search.js"></script>
+    <title>CryptoTrackr</title>
+    <link rel="stylesheet" href="/public/style/custom-style.css">
 </head>
 
 <body>
-    <%- body %>
+    <%- include('../essensial/nav', {user: user}) %>
+
+        <main>
+            <%- body %>
+        </main>
 </body>
 
 </html>

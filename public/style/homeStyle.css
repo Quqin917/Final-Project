@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.home-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-family: inherit;
+    color: #fff;
+    display: flex;
+    overflow: hidden;
+}
+
+.home-wrapper::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: 24%;
+    left: 48%;
+    filter: opacity(0.1);
+}
+
+.home-wrapper::after {
+    content: "";
+    position: absolute;
+    background-color: #8e44ad;
+    width: 200px;
+    height: 200px;
+    bottom: 12%;
+    right: 14%;
+    filter: blur(90px) brightness(0.7);
+}
+
+.text-container {
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-container h1 {
+    margin: 0;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.text-container p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.homepage-button {
+    margin: 15px 0 0;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    width: 500px;
+    height: 66px;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.homepage-button:hover, .homepage-button:focus {
+    color: #6A0572;
+    filter: brightness(5);
+}
+
+@media (max-width: 1730px) {
+    .home-wrapper::before {
+        left: 47%;
+        transition: 0.3s ease;
+    }
+}
+
+@media (max-width: 1525px) {
+    .home-wrapper::before {
+        left: 35%;
+    }
+}
+
+@media (max-width: 1270px) {
+    .home-wrapper::before {
+        left: 27%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home-wrapper::before {
+        display: none;
+    }
+
+    .text-container h1, .text-container p {
+        color: #00eeff;
+    }
+}
+
+@media (max-width: 840px) {
+    .text-container {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 650px) {
+    .text-container {
+        margin-left: 45px;
+    }   
+}
+
+@media (max-width: 550px) {
+    .text-container h1 {
+        font-size: 75px;
+        text-align: center;
+    }
+
+    .text-container p {
+        font-size: 30px;
+    }
+
+    .homepage-button {
+        width: 80%;
+        font-size: 40px;
+    }
+
+    .home-wrapper::after {
+        width: 150px;
+        height: 150px;
+        bottom: -7%;
+        right: 11%;
+    }
+}
+
+@media (max-width: 520px) {
+    .text-container {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .text-container {
+        margin-left: 10px;
+    }
+
+    .text-container h1 {
+        font-size: 50px;
+    }
+}

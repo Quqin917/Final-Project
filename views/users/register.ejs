@@ -1,0 +1,54 @@
+<div class="register-wrapper">
+
+    <div class="auth-container">
+
+        <div class="auth-header">
+
+            <h1>Register</h1>
+            <span class="close-button" id="closeButton" onclick="goingToHomepage()">&times;</span>
+        </div>
+
+        <div class="auth-form">
+
+            <form action="/auth/register" method="post">
+
+                <% if (messages.error) { %>
+
+                    <div class="error-message">
+
+                        <i class='bx bxs-error'></i>
+                        <%= messages.error %>
+                    </div>
+
+                    <% } %>
+
+                        <div class="input-container">
+
+                            <input type="text" name="username" id="username" placeholder="Username" autocomplete="off"
+                                autofocus required>
+                            <i class='bx bxs-face'></i>
+                        </div>
+
+                        <div class="input-container">
+
+                            <input type="email" name="email" id="email" placeholder="example@example" autocomplete="off"
+                                autofocus required>
+                            <i class='bx bxl-gmail'></i>
+                        </div>
+
+                        <div class="input-container">
+
+                            <input type="password" name="password" id="password" placeholder="Password"
+                                autocomplete="off" autofocus required>
+                            <i class='bx bxs-lock-alt'></i>
+                        </div>
+
+                        <button type="submit" style="margin-top: 25px;">Register</button>
+
+                        <div class="register-container">
+                            <p>Have An Account? <a href="/auth/login">Sign In</a></p>
+                        </div>
+            </form>
+        </div>
+    </div>
+</div>

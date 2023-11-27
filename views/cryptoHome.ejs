@@ -1,0 +1,60 @@
+<div class="cryptoMain-wrapper">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <td>Crypto</td> <!-- name -->
+                    <td>Price</td> <!-- price -->
+                    <td>Market Cap</td> <!-- market -->
+                    <td>Volume(24h)</td> <!-- volume -->
+                    <td>All-time High</td> <!-- all Time High -->
+                    <td>1h %</td> <!-- Hours -->
+                    <td>24h %</td> <!-- Days -->
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let i=0; i < coins.length; i++) { %>
+                    <tr>
+                        <td data-cell="name" class="crypto-name"> <!-- name -->
+                            <img src="<%= coins[i].png %>" alt="<%= coins[i].name %>">
+                            <span>
+                                <%= coins[i].name %>
+                                    <span class="crypto-code">
+                                        <%= coins[i].code %>
+                                    </span>
+                            </span>
+                        </td>
+                        <td data-cell="price"> <!-- Price -->
+                            $<%= coins[i].price %>
+                        </td>
+                        <td data-cell="market"> <!-- market -->
+                            $<%= coins[i].cap %>
+                        </td>
+                        <td data-cell="volume"> <!-- volume -->
+                            $<%= coins[i].volume %>
+                        </td>
+                        <td data-cell="alltimehigh"> <!-- all Time High -->
+                            $<%= coins[i].allTimeHigh %>
+                        </td>
+                        <td class="<%= parseFloat(coins[i].rawHour) < 1 ? 'falling' : 'rising' %>" data-cell="hours">
+                            <!-- Hours -->
+                            <%= coins[i].hour %>
+                        </td>
+                        <td class="<%= parseFloat(coins[i].rawDay) < 1 ? 'falling' : 'rising' %>" data-cell="days">
+                            <!-- Days -->
+                            <%= coins[i].day %>
+                        </td>
+                    </tr>
+                    <% } %>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <div class="source-container">
+                        <label>Data Is Provided By</label>
+                        <a href="http://www.livecoinwatch.com/">Livecoinwatch</a>
+                    </div>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

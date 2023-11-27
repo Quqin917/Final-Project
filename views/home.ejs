@@ -1,0 +1,63 @@
+<div class="home-wrapper">
+
+    <div class="text-container">
+        <h1>Welcome To CryptoTrackr</h1>
+        <p>Real-Time Crypto Website</p>
+        <% if (user) { %>
+            <button type="button" id="redirectButton1" class="homepage-button"><i>watchlist</i></button>
+            <% } else { %>
+                <button type="button" id="redirectButton2" class="homepage-button"><i>watchlist</i></button>
+                <% } %>
+    </div>
+
+    <div class="crypto-ball-container">
+
+        <div class="black-ball ethereum">
+            <div class="crypto-ring ethereumRing">
+                <div class="crypto-ball ethereumBall">
+                    <div class="crypto-image ethereumImage">
+                        <img src="../public/image/ethereum.png" alt="ethereum.png" class="ethereumPicture">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="crypto-ball solana">
+            <div class="crypto-ring solanaRing">
+                <div class="crypto-image solanaImage">
+                    <img src="../public/image/solana.png" alt="solana.png" class="solanaPicture">
+                </div>
+            </div>
+        </div>
+
+        <div class="crypto-ball bitcoin">
+            <img src="../public/image/bitcoin.png" alt="bitcoin.png" class="bitcoinPicture">
+        </div>
+
+        <div class="crypto-image litecoin">
+            <img src="../public/image/litecoin.png" alt="litecoin.png" class="litecoinPicture">
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const redirect1 = document.getElementById('redirectButton1');
+        const redirect2 = document.getElementById('redirectButton2');
+
+        if (redirect1) {
+
+            redirect1.addEventListener('click', function () {
+                window.location.href = '/crypto';
+            });
+        } else if (redirect2) {
+
+            redirect2.addEventListener('click', function () {
+                window.location.href = '/auth/login';
+            });
+        }
+
+    });
+</script>

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.navbar {
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.nav-title {
+    padding-right: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-links, .nav-title {
+    font-size: 30px;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    padding: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s ease;
+    display: block;
+}
+
+.nav-title:hover, .nav-title:focus, .nav-links li:hover a, .nav-links li a:focus {
+    color: #6A0572;
+    transition: color 0.1s ease-in-out;
+    filter: brightness(5);
+}
+
+.toggle-button {
+    position: absolute;
+    right: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.bar1, .bar2, .bar3, .bar4 {
+    width: 50px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 19px) rotate(-45deg);
+}
+
+.change .bar2 { 
+    transform: translateX(19px);
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translateX(-19px);
+    opacity: 0;
+}
+
+.change .bar4 {
+    opacity: 1;
+    transform: translate(0, -19px) rotate(45deg);
+}
+
+@media (max-width: 935px) {
+    .toggle-button {
+        display: flex;
+    }
+    
+    .nav-links {
+        width: 100%;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.4s ease-out;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all 0.4s ease-out;
+    }
+    
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .nav-links li {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+    }
+
+    .nav-links li a {
+        width: 100%;
+    }
+
+    .nav-links.shows {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        opacity: 1;
+    }
+
+    .nav-links.shows li {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        padding: 10px 0;
+    }
+
+    .nav-links.shows li a {
+        width: 100%;
+    }
+}
