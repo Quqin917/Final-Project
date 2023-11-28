@@ -22,10 +22,22 @@ CryptoTrackr is a real-time cryptocurrency price tracking web application develo
 
 ## Frontend
 
-- [Frontend Folder](./views/): The `views` folder holds the frontend code including templates.
-- [Style Folder](./public/): The `public` folder holds the style code including image, components, style.
+The frontend of the application is organized into folders:
 
-  - [Components]
+- **Public**: Contains images and styles used in the frontend.
+
+  - **Image**: Includes images for various cryptocurrencies.
+  - **JavaScript**: Holds JavaScript files for different functionalities like login, navigation, and search.
+  - **Style**: Consists of CSS files for styling different components of the application.
+
+- **Src**: Contains the core logic of the application.
+
+  - **Config**: Houses configuration files such as `cryptoControl.js` and `helper.js`.
+  - **Middleware**: Includes middleware functions for authentication and crypto-related functionality.
+  - **Models**: Defines MongoDB models for crypto and user data.
+  - **Routes**: Contains route definitions for authentication and cryptocurrency-related pages.
+
+- **Views**: Contains EJS templates for different pages such as adding and deleting cryptocurrencies, user registration, and login.
 
 ## User Security
 
