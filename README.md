@@ -39,6 +39,13 @@ The frontend of the application is organized into folders:
 
 - **Views**: Contains EJS templates for different pages such as adding and deleting cryptocurrencies, user registration, and login.
 
-## User Security
+## Future Enchancements
 
-When The User wished to login for accessing the watchlist. The user password and username is store at a databases, and the databases in the application is using MongoDB. But before the password gotten inserted into the databases, the program will be encrypted into some random word and number that been combine into one. This funnction is from bcrypt library.
+While CryptoTrackr is currently equipped with essential features, there are opportunities for future enhancements to further improve the user experience and functionality. Here are some potential areas for development:
+
+1. Real-Time Notifications:
+   - Implement a notification system to alert users about significant changes in cryptocurrency prices or important account activities.
+1. Advanced Charting:
+   - Enhance the charting capabilities to allow users to analyze historical cryptocurrency price data using advanced charting tools and technical indicators.
+1. User Preferences:
+   - Introduce a user preferences section where users can customize their dashboard, set default currencies, and choose preferred cryptocurrencies.
