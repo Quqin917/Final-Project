@@ -2,23 +2,21 @@
 
 ## Introduction
 
-This project is made as final project for CS50 2023 online course that has been offered by Harvard University. This is a web application that has been build around node.js and other programming languange such as HTML, JavaScript, and CSS. The application is design to tracking cryptocurrency real time price.
+CryptoTrackr is a real-time cryptocurrency price tracking web application developed as the final project for the CS50 2023 online course offered by Harvard University. Built around Node.js, HTML, JavaScript, and CSS, The application allow users to monitor live changes in cryptocurrency prices.
 
-The main function of the application is at the live change of cryptocurrency price, where the user can adding new crypto into the watchlist, and delete cryptocurrency that has been in the watchlist.
+## Key Features
+
+- Real-time cryptocurrency price tracking.
+- Watchlist functionality for adding and deleteing cryptocurrencies.
+- Secure user authenctication using bcrypt and password encryption.
 
 ## Backend
 
-- [[server.js](./server.js)](#000000)
-
-  This File is where most server logic resides. The first lines of code (1 - 11) start with require declarations, and for (13 - 47) is use for server configuratin.
-
-  The next code refer to the routes for the responding page
-
+- [server.js](./server.js): This File is where most server logic resides. The first lines of code (1 - 11) start with require declarations, and lines (13 - 47) are dedicated to server configuration. The code from lines (49 - 55) is defines routers for different pages of the website:
   - [Homepage](./src/routes/index.js)
-
-  * [Authentication](./src/routes/auth.js)
-
+  - [Authentication](./src/routes/auth.js)
   - [Cryptocurrency](./src/routes/crypto.js)
+    The final lines (57 - 59) ensure the server is running and accessible throught the web.
 
 ## User Security
 
