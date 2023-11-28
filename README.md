@@ -49,3 +49,11 @@ While CryptoTrackr is currently equipped with essential features, there are oppo
    - Enhance the charting capabilities to allow users to analyze historical cryptocurrency price data using advanced charting tools and technical indicators.
 1. User Preferences:
    - Introduce a user preferences section where users can customize their dashboard, set default currencies, and choose preferred cryptocurrencies.
+1. Enchanced Security Measures:
+   - Strengthen security measures by incorporating two-factor authentication (2FA) or biometric authentication for user logins.
+1. Educational Resources:
+   - Include educational resources within the application, offering users information about blockchain technology, cryptocurrencies, and investment strategies.
+1. Portfolio Managemnts:
+   - Add a portfolio management feature, enabling users to track the performance of their cryptocurrency investments over time.
+1. AI-Powered Crypto Analysis:
+   - Integrate artificial intelligence (AI) algorithms to provide users with advanced analytics and predictions for cryptocurrency price movements. Leverage machine learning models to enhance market analysis and offer personalized investment recommendations.
