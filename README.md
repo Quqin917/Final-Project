@@ -20,6 +20,13 @@ CryptoTrackr is a real-time cryptocurrency price tracking web application develo
 
   The final lines (57 - 59) ensure the server is running and accessible throught the web.
 
+## Frontend
+
+- [Frontend Folder](./views/): The `views` folder holds the frontend code including templates.
+- [Style Folder](./public/): The `public` folder holds the style code including image, components, style.
+
+  - [Components]
+
 ## User Security
 
 When The User wished to login for accessing the watchlist. The user password and username is store at a databases, and the databases in the application is using MongoDB. But before the password gotten inserted into the databases, the program will be encrypted into some random word and number that been combine into one. This funnction is from bcrypt library.

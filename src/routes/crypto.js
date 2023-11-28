@@ -6,7 +6,7 @@ const crypto = require('../models/cryptoMaps');
 const auth = require('../middleware/authenticationMiddleware');
 const { cryptoAPI, fetchAPI } = require('../middleware/cryptoMiddleware');
 
-const cacheControl = require('../config/cryptoContol');
+const cacheControl = require('../config/cryptoControl');
 
 
 router.get('/', auth.isAuthenticatedToHome, async (req, res) => {
