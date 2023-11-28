@@ -8,15 +8,17 @@ The main function of the application is at the live change of cryptocurrency pri
 
 ## Backend
 
-\*[server.js](./server.js)
+- [server.js](./server.js)
 
-This File is where most server logic resides. The first lines of code (1 - 11) start with require declarations, and for (13 - 47) is use for server configuratin.
+  This File is where most server logic resides. The first lines of code (1 - 11) start with require declarations, and for (13 - 47) is use for server configuratin.
 
-The next code refer to the routes for the responding page
+  The next code refer to the routes for the responding page
 
-- [Homepage](./src/routes/index.js)
-- [Authentication](./src/routes/auth.js)
-- [Cryptocurrency](./src/routes/crypto.js)
+  - [Homepage](./src/routes/index.js)
+
+  * [Authentication](./src/routes/auth.js)
+
+  - [Cryptocurrency](./src/routes/crypto.js)
 
 ## User Security
 
