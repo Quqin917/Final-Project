@@ -8,7 +8,7 @@ The main function of the application is at the live change of cryptocurrency pri
 
 ## Backend
 
-- [server.js](./server.js)
+- [[server.js](./server.js)](#000000)
 
   This File is where most server logic resides. The first lines of code (1 - 11) start with require declarations, and for (13 - 47) is use for server configuratin.
 
