@@ -18,7 +18,7 @@ CryptoTrackr is a real-time cryptocurrency price tracking web application develo
 - **[Authentication](./src/routes/auth.js)**
 - **[Cryptocurrency](./src/routes/crypto.js)**
 
-The final lines (57 - 59) ensure the server is running and accessible throught the web.
+  The final lines (57 - 59) ensure the server is running and accessible throught the web.
 
 ## Frontend
 
