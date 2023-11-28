@@ -2,7 +2,9 @@
 
 ## Introduction
 
-CryptoTrackr is a real-time cryptocurrency price tracking web application developed as the final project for the CS50 2023 online course offered by Harvard University. Built around Node.js, HTML, JavaScript, and CSS, The application allow users to monitor live changes in cryptocurrency prices.
+CryptoTrackr is a real-time cryptocurrency price tracking web application developed as the final project for the CS50 2023 online course offered by Harvard University. Built around Node.js, HTML, JavaScript, and CSS, the application allows users to monitor live changes in cryptocurrency prices.
+
+The backend utilizes MongoDB as the database to store user information and cryptocurrency data securely. User passwords and usernames are encrypted using the bcrypt library before being stored in the database. This ensures a robust and secure authentication process.
 
 ## Key Features
 
