@@ -13,10 +13,10 @@ CryptoTrackr is a real-time cryptocurrency price tracking web application develo
 ## Backend
 
 - [server.js](./server.js): This File is where most server logic resides. The first lines of code (1 - 11) start with require declarations, and lines (13 - 47) are dedicated to server configuration. The code from lines (49 - 55) is defines routers for different pages of the website:
-
   - [Homepage](./src/routes/index.js)
   - [Authentication](./src/routes/auth.js)
   - [Cryptocurrency](./src/routes/crypto.js)
+    The final lines (57 - 59) ensure the server is running and accessible throught the web.
 
 The final lines (57 - 59) ensure the server is running and accessible throught the web.
 
