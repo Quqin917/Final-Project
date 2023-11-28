@@ -8,10 +8,14 @@ The main function of the application is at the live change of cryptocurrency pri
 
 ## Backend
 
-### server.js
+- [server.js](./server.js)
 
-This File is where most server logic resides. The first lines of code (1 - 11) start with import declarations,
+This File is where most server logic resides. The first lines of code (1 - 11) start with require declarations, and for (13 - 47) is use for server configuratin.
 
-## User Securiry
+The next code refer to the routes for the responding page `#RRGGBB`
 
-When The User wished to login for accessing the watchlist the user password and username is store at a databases. The databases this application use is MongoDB.
+_###_
+
+## User Security
+
+When The User wished to login for accessing the watchlist. The user password and username is store at a databases, and the databases in the application is using MongoDB. But before the password gotten inserted into the databases, the program will be encrypted into some random word and number that been combine into one. This funnction is from bcrypt library.
