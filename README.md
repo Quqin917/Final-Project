@@ -1,5 +1,9 @@
 # CryptoTrackr
 
+## VIDEO DEMO
+
+This site video demo is at [this](https://youtu.be/si_z0Ohs6_Y)
+
 ## Introduction
 
 CryptoTrackr is a real-time cryptocurrency price tracking web application developed as the final project for the CS50 2023 online course offered by Harvard University. Built around Node.js, HTML, JavaScript, and CSS, the application allows users to monitor live changes in cryptocurrency prices.
