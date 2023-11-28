@@ -49,7 +49,6 @@ initializePassport(passport);
 const indexRouter = require('./src/routes/index');
 const authRouter = require('./src/routes/auth');
 const cryptoMainRouter = require('./src/routes/crypto');
-const accountRouter = require('./src/routes/account');
 
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
